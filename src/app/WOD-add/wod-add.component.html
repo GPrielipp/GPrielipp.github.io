@@ -1,0 +1,17 @@
+<section id="wodcreation">
+    <h2 for="wodcreation"> Create a new WOD </h2><br>
+
+    <h3> Workout Title: </h3><input id="title" [(ngModel)]="title" class="title" type="text" maxlength="60"><br>
+    <h3> Activities: </h3>
+    <textarea id="activities" [(ngModel)]="activities" rows="10" cols="50"></textarea>
+    <!-- add a new activity functionality -->
+    <div class="tooltip">
+        <span class="tooltiptext">Create WOD</span>
+
+        <div (click)="createwod()" id="add">
+            <div id="vertbar"></div>
+            <div id="horzbar"></div>
+        </div>
+        <!-- end of plus sign symbol -->
+    </div>
+</section>

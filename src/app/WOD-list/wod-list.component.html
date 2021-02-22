@@ -1,0 +1,21 @@
+<div class="wod" id="{{ wod.id }}" (click)="toggle(wod.id)" *ngFor="let wod of wods">
+    <h3>{{ wod.title }}</h3>
+    <section class="toggleable hidden">
+        <p *ngFor="let activity of wod.activities">
+            {{ activity }}
+        </p>
+        <div class="buttons">
+            <div class="button tooltip" (click)="copy(wod.activities, wod.id)">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                <p> Copy Activities </p>
+            </div>
+            <div (click)="editWOD(wod)" class="button edit">
+                <p> EDIT </p>
+            </div>
+            <div (click)="deleteWOD(wod)" class="button delete">
+                <p> DELETE </p>
+            </div>
+        </div>
+
+    </section>
+</div>

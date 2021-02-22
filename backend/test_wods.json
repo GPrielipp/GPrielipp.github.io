@@ -1,0 +1,48 @@
+[{
+    "username": "George",
+    "password": "passwd",
+    "_id": {
+        "$oid": "5f5be8b6a1a8c42147599fef"
+    },
+    "wods": [{
+            "title": "Test 1",
+            "id": "Test1",
+            "activities": [
+                "1 mile run",
+                "30 push ups",
+                "30 pull ups",
+                "20 sit ups",
+                "5 minutes jumprope"
+            ],
+            "author": "George",
+            "date_created": "Fri Sep 11 2020 13:15:37 GMT-0800 (Alaska Daylight Time)"
+        },
+        {
+            "title": "Test 2: Medium length title",
+            "id": "Test2",
+            "activities": [
+                "1 mile run",
+                "30 push ups",
+                "30 pull ups"
+            ],
+            "author": "George",
+            "date_created": "Fri Sep 11 2020 13:15:37 GMT-0800 (Alaska Daylight Time)"
+        },
+        {
+            "title": "Test 3: Super long title created by someone who wants to crash stuff",
+            "id": "Test3",
+            "activities": [
+                "1 mile run",
+                "30 push ups",
+                "30 pull ups",
+                "20 sit ups",
+                "5 minutes jumprope",
+                "1 minute wall sit",
+                "30 flutter kicks",
+                "1 mile cooldown run"
+            ],
+            "author": "George",
+            "date_created": "Fri Sep 11 2020 13:15:37 GMT-0800 (Alaska Daylight Time)"
+        }
+    ]
+}]

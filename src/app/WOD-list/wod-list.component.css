@@ -1,0 +1,155 @@
+.wod {
+    padding: 10px;
+    padding-left: 20px;
+    margin: auto;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: left;
+    background-color: rgb(113, 146, 113);
+    transition: background-color .2s ease-in-out;
+    border: 1px dashed lightgray;
+    margin-bottom: 10px;
+    max-width: 60%;
+    overflow: hidden;
+    color: black;
+}
+
+.wod.default-open-wod section div.buttons {
+    display: inline;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.wod.default-open-wod section div.button.delete {
+    background-color: rgb(248, 214, 214);
+    transition: background-color .15s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+}
+
+.wod.default-open-wod:hover section div.button.delete {
+    background-color: rgb(248, 214, 214);
+}
+
+.wod.default-open-wod:hover section div.button.delete:hover {
+    cursor: pointer;
+    background-color: rgb(252, 155, 155);
+}
+
+.buttons .button {
+    float: left;
+    margin-right: 20px;
+}
+
+.wod h3 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: inherit;
+}
+
+.wod.default-open-wod h3 {
+    width: 0%;
+}
+
+.wod.default-open-wod:hover h3 {
+    color: black;
+}
+
+.wod ::selection {
+    user-select: none;
+}
+
+.wod.default-open-wod {
+    background-color: rgb(206, 202, 173);
+    /* color: rgb(152, 251, 152); */
+}
+
+.wod.default-open-wod:hover {
+    background-color: none;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.wod .toggleable {
+    text-align: left;
+    padding-left: 40px;
+    display: true;
+}
+
+.wod:hover {
+    cursor: pointer;
+    background-color: rgb(90, 139, 155);
+    color: black;
+}
+
+.button {
+    background-color: rgb(169, 189, 216);
+    transition: background-color .15s ease-in-out;
+    width: 150px;
+    border-radius: 10px;
+    padding: 2px 3px;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.wod.default-open-wod:hover section div.button {
+    background-color: rgb(169, 189, 216);
+}
+
+.default-open-wod section div.button {
+    background-color: rgb(238, 235, 213);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px gray;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 48px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 155%;
+    top: 5px;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

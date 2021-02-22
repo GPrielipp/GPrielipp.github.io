@@ -1,0 +1,27 @@
+div.form {
+    background-color: lemonchiffon;
+    width: 80%;
+    padding: 5%;
+    padding-top: 0px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: black;
+    font-family: monospace;
+    overflow: hidden;
+    border: 3px outset black;
+}
+
+div.form h1 {
+    text-align: center;
+}
+
+div.form label {
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+div.form button {
+    background-image: rgb(255, 0, 0);
+}
